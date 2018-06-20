@@ -8,6 +8,13 @@ console.log("Aren Kani Bani|| Zerma ");
 // 2. Consider the following code and correction
 console.log( " I'm awesome");
 
+// 3. Declare a variable x and initialize it with an integer, using these exact steps
+var x;
+console.log('the value of x will be nothing');
+console.log(x);
+var x = 20;
+console.log('the value of x will be 20');
+console.log(x);
 
 
 // console.log('test');
