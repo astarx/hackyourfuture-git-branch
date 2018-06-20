@@ -87,6 +87,7 @@
   }
 
   function add() {
+    // Declaring variables as Numbers to get the sum of both values, and not a combination
     num1 = Number(document.getElementById('number1').value);
     num2 = Number(document.getElementById('number2').value);
     // we add the two values
@@ -109,10 +110,11 @@
   }
 
   function largest() {
+    // Declaring variables as Numbers ONLY
     num1 = Number(document.getElementById('number1').value);
     num2 = Number(document.getElementById('number2').value);
     // we subtract the two values
-
+    // Statments to get the result of same/different numbers and a statement to check if numbers (not letters or symbols)
     if (num1 > num2) {
       result = num1;
     } else if (num1 < num2) {
@@ -129,8 +131,7 @@
   function closestTo100() {
     num1 = Number(document.getElementById('number1').value);
     num2 = Number(document.getElementById('number2').value);
-    // we subtract the two values
-
+    // Used Math.abs to get the absolute value of numbers
     if (Math.abs(100 - num1) < Math.abs(100 - num2)) {
       result = num1;
     } else if (Math.abs(100 - num1) > Math.abs(100 - num2)) {
@@ -144,7 +145,5 @@
     resultElement.innerHTML = result;
   }
 </script>
-
-<!-- GOOD LUCK GUYS! -->
 
 </html>
