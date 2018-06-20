@@ -16,6 +16,15 @@ var x = 20;
 console.log('the value of x will be 20');
 console.log(x);
 
+// 4. Declare a variable y and assign a string to it.
+
+var y = " DAS";
+console.log("the value will the tex DAS");
+console.log(y);
+var y ="Hello"
+console.log("the value will be the new assigned string Hello ");
+console.log(y);
+
 
 // console.log('test');
 // var array= [
