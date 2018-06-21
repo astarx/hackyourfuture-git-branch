@@ -77,6 +77,18 @@
   }
 
   //  OTHER FUNCTIONS COME HERE
+  //FUNCTION DIV
+  function divide(){
+    
+    num1 = parseInt(document.getElementById('number1').value);
+    
+    num2 = parseInt(document.getElementById('number2').value);
+    
+    result = num1 / num2;
+
+    var resultElement = document.getElementById('js-result');
+    resultElement.innerHTML = result;
+  }
   //FUNCTION ADD
   function add(){
     
