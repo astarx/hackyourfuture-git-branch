@@ -15,6 +15,9 @@
     margin: auto;
     width: 50%;
   }
+  h3{
+    color: red;
+  }
 </style>
 
 <body>
@@ -28,13 +31,13 @@
       <div class="form-group">
         <label for="number1">First number</label>
         <!-- we define an element with an id so that we can access it from our javascript -->
-        <input type="text" class="form-control" placeholder="Enter first number" id="number1">
+        <input type="number" class="form-control" placeholder="Enter first number" id="number1" onkeypress="return isNumber(event)">
       </div>
 
       <div class="form-group">
         <label for="number2">Second number</label>
         <!-- we define another element with another id so that we can also access it from our javascript -->
-        <input type="text" class="form-control" placeholder="Enter second number" id="number2">
+        <input type="number" class="form-control" placeholder="Enter second number" id="number2" onkeypress="return isNumber(event)">
       </div>
 
     </form>
@@ -58,7 +61,15 @@
 </body>
 
 <script>
-
+  //Allow only numbers on key press
+function isNumber(evt) {
+    evt = (evt) ? evt : window.event;
+    var charCode = (evt.which) ? evt.which : evt.keyCode;
+    if (charCode > 31 && (charCode < 48 || charCode > 57)) {
+        return false;
+    }
+    return true;
+}
   function multiply() {
     // Here we look inside our HTML document and get the element with ID 'number1'
     // which is an input field, so we can get its value (what we have typed inside the input field)
@@ -77,6 +88,81 @@
   }
 
   //  OTHER FUNCTIONS COME HERE
+  function divide(){
+    num1=document.getElementById('number1').value;
+    num2=document.getElementById('number2').value;
+    result=num1 / num2;
+    var resultElement=document.getElementById('js-result');
+    resultElement.innerHTML=result;
+
+  }
+
+  function add(){
+    num1=document.getElementById('number1').value;
+    num2=document.getElementById('number2').value;
+    result=Number(num1) + Number(num2);
+    var resultElement=document.getElementById('js-result');
+    resultElement.innerHTML=result;
+
+  }
+  function subtract(){
+    num1=document.getElementById('number1').value;
+    num2=document.getElementById('number2').value;
+    result=Number(num1) - Number(num2);
+    var resultElement=document.getElementById('js-result');
+    resultElement.innerHTML=result;
+
+  }
+
+  function largest(){
+    num1=document.getElementById('number1').value;
+    num2=document.getElementById('number2').value;
+
+    if(Number(num1)>Number(num2))
+    {
+      result=num1+" is Greater than "+num2;
+      var resultElement=document.getElementById('js-result');
+      resultElement.innerHTML=result;
+    }
+    else if(Number(num1)==Number(num2))
+    {
+      result=num1+" is Equal to "+num2;
+      var resultElement=document.getElementById('js-result');
+      resultElement.innerHTML=result;
+    }
+    else if(Number(num1)<Number(num2))
+    {
+      result=num1+" is smaller than "+num2;
+      var resultElement=document.getElementById('js-result');
+      resultElement.innerHTML=result;
+    }
+  }
+
+
+  function closestTo100(){
+    num1=document.getElementById('number1').value;
+    num2=document.getElementById('number2').value;
+
+    if (Math.abs(100-Number(num1))<Math.abs(100-Number(num2)))
+    {
+      result=num1+" is closer to 100 than "+num2;
+      var resultElement=document.getElementById('js-result');
+      resultElement.innerHTML=result;
+    }
+    else if(Math.abs(100-Number(num1))==Math.abs(100-Number(num2)))
+    {
+      result=num1+" is " + Math.abs(Math.abs(Number(num1)-100))+ " Far From 100 As " +num2;
+      var resultElement=document.getElementById('js-result');
+      resultElement.innerHTML=result;
+    }
+    else
+    {
+      result=num2+" is closer to 100 than "+num1;
+      var resultElement=document.getElementById('js-result');
+      resultElement.innerHTML=result;
+    }
+  }
+
 
   // GOOD LUCK GUYS!
 
