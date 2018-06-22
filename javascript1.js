@@ -46,6 +46,16 @@ console.log(animals);
 animals[3]='baby pig';
 console.log(animals);
 
+// 7 string/
+let myString= "this is a test";
+console.log(myString);
+console.log('the length of my string' + myString.length);
+
+
+
+
+
+
 
 // console.log('test');
 // var array= [
