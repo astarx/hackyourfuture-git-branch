@@ -73,3 +73,12 @@ if (typeof 2 == typeof "hello") {
         console.log('different type');
     }
 
+    // question 9
+var x= 7;
+console.log(x);
+x=x%3;
+console.log(x);
+console.log("will give us the value of 1 which is the remainder")
+console.log("% is a modulus division remainder");
+console.log( "after the operation is  is going to return only the remainder")
+
