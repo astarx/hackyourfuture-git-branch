@@ -25,6 +25,19 @@ var y ="Hello"
 console.log("the value will be the new assigned string Hello ");
 console.log(y);
 
+// 5. How do you round the number 7.25, to the nearest integer (i.e., whole number)?
+var z= 7.25; console.log(z);
+var a = Math.round(7.25);
+console.log(a);
+
+if (a > z) {
+    console.log(a);
+}
+else {
+    console.log(z);
+}
+
+
 
 // console.log('test');
 // var array= [
