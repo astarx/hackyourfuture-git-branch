@@ -37,6 +37,14 @@ else {
     console.log(z);
 }
 
+// 6. Arrays
+var animals=[];
+console.log("it is going to be an empty array for now");
+console.log(animals);
+var animals=['cat', 'lion', 'monkey'];
+console.log(animals);
+animals[3]='baby pig';
+console.log(animals);
 
 
 // console.log('test');
@@ -63,5 +71,4 @@ else {
 // console.log("the value of my variable wil be undefined");
 // var x= 2;
 // console.log(x);
-
 
