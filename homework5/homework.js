@@ -1,16 +1,16 @@
-/*===== FIRST EXERCICE ====*/
+/*===== 1 EXERCICE ====*/
 
 // CONSOLE.LOG LANGUAGES YOU KNOW
 console.log("Hello world");
 console.log("Hola, mundo");
 console.log("Salut, monde");
 
-/*=====  SECOND EXERCICE ====*/
+/*=====  2 EXERCICE ====*/
 // 2). Consider the following code:
 
 console.log('I\'m awesome'); // you need backslash to escape to turn this character into string
 
-/*=====  THIRD EXERCICE ====*/
+/*=====  3 EXERCICE ====*/
 
 // 3) 3. 3. Declare a variable x and initialize it with an integer, using these exact steps:
 // 3.1 First, declare your variable x (do not initialize it yet).
@@ -30,7 +30,7 @@ let x = 4;
 console.log("the value of x is not defined because we must declare variables first before console.log");
 
 
-/*=====  FORTH EXERCICE ====*/
+/*=====  4 EXERCICE ====*/
 
 // 4)  4. Declare a variable y and assign a string to it.
 // 4.1 Write a console.log statement in which you explain in words what you think the value of the string is.
@@ -43,10 +43,10 @@ let y = "HackyourFuture";
 console.log("string are the way to hold text values")
 console.log(y);
 let y = "a different string";
-console.log("hello");
+console.log("we already assigned y to a string?"); //I am not 100% what is happening here
 console.log(y);
 
-/*==== FITH QUESTION ====*/
+/*==== 5 QUESTION ====*/
 // 5. How do you round the number 7.25, to the nearest integer (i.e., whole number)?
 // 5.1 Declare a variable z and assign the number 7.25 to it.
 // 5.2 console.log z.
@@ -64,7 +64,7 @@ console.log(a);
 let b = Math.max(z, a);
 console.log(b);
 
-/*==== SIXTH QUESTION ====*/
+/*==== 6 QUESTION ====*/
 // 6. Arrays
 // 6.1 Declare an empty array. Make sure that the name you choose indicates 'plurality', because an array is capable of containing more than one element. (See Naming conventions).
 // 6.2 Write a console.log statement that explains in words what you think the value of the array is.
@@ -96,7 +96,7 @@ console.log(myString.length);
 // 8. Write a program that checks the types of two variables and prints out SAME TYPE if they are the same type.
 // 8.1 First declare at least four variables and assign them different data types.
 // 8.2 For each variable write a console.log statement that logs the value
-// I played with this challenge
+// I PLAYED WITH THIS CHALLENGE
 let number = prompt("Hey hackyourfuture class, is number 6 === to number 8? yes or not?");
 let secondNumber = 8;
 let string = "I am a super string";
@@ -113,9 +113,7 @@ if(number === "yes"){
 let x = 7;
 x = x % 3;
 console.log(x);
-console.log("");
-console.log("");
-console.log("");
+console.log("It will be 1 because 1 is the remainder of the operation");// I think I see it something like 3 + 3 = 6 ; leftover = 1; But I am not sure if this is the correct approach;
 
 // 10. Write a program to answer the following questions:
 // 10.1 Can you store multiple types in an array? Numbers and strings? Make an example that illustrates your answer.
