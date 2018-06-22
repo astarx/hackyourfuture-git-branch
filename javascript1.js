@@ -51,34 +51,25 @@ let myString= "this is a test";
 console.log(myString);
 console.log('the length of my string' + myString.length);
 
+// question 8;
+var x= 2;
+var y= "hello";
+var z= 6 + "my name";
+var h= 45;
+console.log(x);
+console.log(y);
+console.log(z);
+console.log(h);
+console.log('the type of the variables are going to be as declare  for x and h number, y string, and z also i thnk string')
+console.log(typeof 2);
+console.log(typeof 'hello');
+console.log(typeof '6+ my name');
+console.log(typeof 45);
 
-
-
-
-
-
-// console.log('test');
-// var array= [
-
-
-// 5,
-// 6,
-// "hackyo",
-// "future"
-// ];
-// array.forEach((Element) =>{
-//     console.log(Element);
-// })
-
-// console.log(array.length)
-
-// for(let i=0; i<array.length; i++){
-//     console.log(array[i])
-// }
-
-// console.log("am aweson");
-// var x;
-// console.log("the value of my variable wil be undefined");
-// var x= 2;
-// console.log(x);
+if (typeof 2 == typeof "hello") {
+    console.log('SAME TYPE');
+}
+    else{
+        console.log('different type');
+    }
 
