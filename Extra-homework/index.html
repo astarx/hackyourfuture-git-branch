@@ -80,6 +80,33 @@
       var resultElement = document.getElementById('js-result');
       resultElement.innerHTML = result;
   }
+  function add() {
+      num1 = Number(document.getElementById('number1').value);
+      num2 = Number(document.getElementById('number2').value);
+      result = num1 + num2;
+      var resultElement = document.getElementById('js-result');
+      resultElement.innerHTML = result;
+  }
+  function subtract() {
+      num1 = document.getElementById('number1').value;
+      num2 = document.getElementById('number2').value;
+      result = num1 - num2;
+      var resultElement = document.getElementById('js-result');
+      resultElement.innerHTML = result;
+  }
+  function largest() {
+      num1 = document.getElementById('number1').value;
+      num2 = document.getElementById('number2').value;
+      if (num1 < num2) {
+        result = num2;
+      }
+      if (num1 > num2) {
+        result = num1;
+      }
+      
+      var resultElement = document.getElementById('js-result');
+      resultElement.innerHTML = result;
+  }
 </script>
 
 </html>
