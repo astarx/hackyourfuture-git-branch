@@ -1,0 +1,75 @@
+/*=========== number 1 ========*/
+
+console.log("hello world");
+console.log("hallo wereld");
+console.log("bonjour de mond");
+console.log("ہیلو دنیا");
+console.log("سلام دنیا");
+
+/*=========== number 2 ========*/
+
+console.log('I\' m awesome')
+
+/*=========== number 3 ========*/
+
+let x;
+console.log("the value of x will be undifined");
+
+/*=========== number 4 ========*/
+
+console.log(x);
+let x = 4;
+console.log("the value of x is not defined");
+
+/*=========== number 5 ========*/
+
+let y = "javascript";
+console.log("string")
+console.log(y);
+let y = "Another string";
+console.log("y is already declared"); 
+console.log(y);
+
+/*=========== number 6 ========*/
+
+let z = 7.25;
+console.log(z);
+let a = 7.25;
+console.log(a);
+
+let b = Math.max(z, a);
+console.log(b);
+
+/*=========== number 7 ========*/
+
+let plurality = [];
+console.log("holds different values in one variable");
+console.log(plurality);
+
+let animals = ["loin", "fish", "birds", "dinasour"];
+console.log(animals);
+animals.push("baby pig");
+console.log(animals);
+
+/*=========== number 8 ========*/
+
+
+let myString = "this is a test";
+
+console.log(myString.length); 
+
+/* i didn't figured out this one */
+
+
+/*=========== number 9 ========*/
+
+
+let x = 7;
+x = x % 3;
+console.log(x);
+console.log("It will be 1");
+
+
+/* i didn't figured out this one too */
+
+
